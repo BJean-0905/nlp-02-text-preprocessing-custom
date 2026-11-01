@@ -1,4 +1,4 @@
-"""text_preprocessing.py - Project script (example).
+"""text_preprocessing_glassdoor_survey.py - Project script (example).
 
 Author: Britany Goucher
 Date: 2026-10-28
@@ -22,7 +22,7 @@ Notes:
 
 Run from root project folder with:
 
-  uv run python -m nlp.text_preprocessing
+  uv run python -m nlp.text_preprocessing_glassdoor_survey
 """
 
 # ============================================================
@@ -63,7 +63,7 @@ log_path(LOG, "SCRIPTS_PATH", SCRIPTS_PATH)
 
 # Choose a text file to analyze.
 # Each line is treated as one text record.
-input_path: Path = DATA_PATH / "text_data.txt"
+input_path: Path = DATA_PATH / "Glassdoor_Reviews_Cleaned.csv"
 
 # Read all lines from the file.
 text_list: list[str] = input_path.read_text(encoding="utf-8").splitlines()
