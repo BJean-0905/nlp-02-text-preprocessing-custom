@@ -28,6 +28,8 @@ Run from root project folder with:
 # ============================================================
 # Section 1. Setup and Imports (includes logging deps)
 # ============================================================
+from collections import Counter
+import itertools
 import logging
 from pathlib import Path
 import re
@@ -172,6 +174,22 @@ STOP_WORDS: set[str] = {
     "were",
     "will",
     "with",
+    "you",
+    "your",
+    "they",
+    "their",
+    "them",
+    "can",
+    "could",
+    "would",
+    "should",
+    "not",
+    "also",
+    "one",
+    "ice",
+    "cream",
+    "very",
+    "there",
 }
 
 # Keep only tokens that:
@@ -223,7 +241,47 @@ print("Top 20 most frequent cleaned tokens:")
 print(freq_df.head(20))
 
 # ============================================================
-# Section 10. Build a "Most Frequent Cleaned Tokens" Bar Chart
+# Section 10. Bigram Analysis
+# ============================================================
+print(freq_df.head(20))
+bigrams = list(itertools.pairwise(clean_tokens))
+
+bigram_counter = Counter(bigrams)
+
+bigram_df = pl.DataFrame(
+    {
+        "bigram": [
+            f"{word1} {word2}"
+            for (word1, word2), count in bigram_counter.most_common(20)
+        ],
+        "count": [count for (pair, count) in bigram_counter.most_common(20)],
+    }
+)
+
+print("\nTop 20 Bigrams:")
+print(bigram_df)
+
+# ============================================================
+# Section 11. Top Bigrams Chart
+# ============================================================
+top_bigram_df = bigram_df.head(10)
+
+plt.figure(figsize=(12, 6))
+
+plt.barh(
+    top_bigram_df["bigram"],
+    top_bigram_df["count"],
+)
+
+plt.title("Top 10 Most Frequent Bigrams")
+plt.xlabel("Frequency")
+plt.ylabel("Bigram")
+
+plt.tight_layout()
+plt.show()
+
+# ============================================================
+# Section 12. Build a "Most Frequent Cleaned Tokens" Bar Chart
 # ============================================================
 
 top_df: pl.DataFrame = freq_df.head(10)
@@ -241,7 +299,7 @@ plt.tight_layout()
 plt.show()
 
 # ============================================================
-# Section 11. Compare Raw vs Clean Token Counts
+# Section 13. Compare Raw vs Clean Token Counts
 # ============================================================
 
 plt.figure(figsize=(8, 5))

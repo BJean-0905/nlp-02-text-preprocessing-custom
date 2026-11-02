@@ -2,6 +2,9 @@
 
 Web Mining and Applied NLP | Project 02 | Example Report
 
+Author: Britany Goucher
+Date: 2026 October
+
 ## Overview
 
 This project introduces text preprocessing
@@ -16,6 +19,10 @@ different preprocessing operations
 to show how cleaning decisions affect
 the representation of text.
 
+Custom project includes a technical modification
+of the example code and addition of survey dataset
+to add bigram analysis.
+
 ## Tools and Methods
 
 The project uses:
@@ -28,6 +35,7 @@ The project uses:
 - Stopword filtering for reducing common vocabulary.
 - Polars for calculating token frequencies.
 - Matplotlib for visualizing preprocessing results.
+- Bigram Analysis
 - Logging for execution records.
 - Ruff, ty, and pytest for code verification.
 - Zensical and GitHub Pages for published documentation.
@@ -69,6 +77,42 @@ but they may also remove meaningful information.
 Understanding these tradeoffs is important
 when preparing text for traditional NLP
 and modern language-model applications.
+
+Custom project shows an enhancement of analysis
+using bigram or phrase analysis. Some of the insights
+were valuable such as great people, work life, other
+phrase combinations don't present as very meaningful,
+such as people who, care about. Additional stop words
+were added such as ice and cream to initial scrub the
+analysis further;however, with such a large dataset further
+scrubbing would be necessary.
+
+## Limitations
+
+Dataset is very large and comes from the a worldwide
+population of varying companies, this likely impacts
+the ability to get more granular in phrase/bigram analysis.
+
+## Assumptions
+
+Initially, the assumption was that bigram analysis
+would be revealing in a more meaningful way; however,
+it likely would be helpful to specifically apply to
+isolated company survey data were domain specific
+phrase knowledge or awareness could be helpful.
+
+## Recommendations
+
+Isolate survey data to a specific company.
+Identify key phrases that are common and if
+they are domain specific enough to add to the
+stop words list. Recognize that including words
+like people or work may limit the outputs that are
+valuable such as work life.
+
+## Custom Project Visual
+
+![Top 10 Most Frequent Bigrams](image.png)
 
 ## Documentation Index
 

@@ -27,6 +27,9 @@ apply common preprocessing techniques,
 compare raw and cleaned text,
 and understand how preprocessing decisions affect analysis.
 
+The custom project includes applying the skill to a different data
+set,survey data.
+
 The project is configured in
 [pyproject.toml](pyproject.toml).
 
@@ -41,6 +44,10 @@ The project combines these records and applies
 several preprocessing operations to prepare
 the text for analysis.
 
+The custom project uses survey data from a site
+call glassdoor. CSV file was imported and trimmed
+to only include survey open text responses.
+
 ## Approach
 
 The project uses Python to clean and analyze text data.
@@ -51,17 +58,18 @@ The example demonstrates:
 - Tokenizing text into individual words.
 - Normalizing text through lowercasing.
 - Removing punctuation and special characters.
-- Filtering common stopwords.
+- Filtering common stopwords. Added additional stop words.
 - Comparing token counts before and after preprocessing.
 - Computing token frequencies using Polars.
 - Visualizing changes in token distributions with Matplotlib.
+- Bigram analysis to identify phrase frequency.
 
 Explore these important project components:
 
 - [pyproject.toml](pyproject.toml) - project identity, dependencies, and tool configuration.
-- [data/](data/) - input text data.
-- [src/nlp/text_preprocessing.py](src/nlp/text_preprocessing.py) - executable Python preprocessing analysis.
-- [notebooks/text_preprocessing.ipynb](notebooks/text_preprocessing.ipynb) - interactive Jupyter notebook example.
+- [data/](data/Glassdoor_Reviews_Cleaned) - input text data.
+- [src/nlp/text_preprocessing.py](src/nlp/text_preprocessing_glassdoor_survey.py) - executable Python preprocessing analysis.
+- [notebooks/text_preprocessing.ipynb](notebooks/text_preprocessing_glassdoor.ipynb) - interactive Jupyter notebook example.
 - [tests/](tests/) - automated tests.
 - [.github/workflows/](.github/workflows/) - automated testing and documentation deployment.
 - [docs/](docs/) - project documentation.
@@ -78,7 +86,7 @@ to set up your machine and project environment.
 From a VS Code terminal in the project root:
 
 ```shell
-uv run python -m nlp.text_preprocessing
+uv run python -m nlp.text_preprocessing_glassdoor_survey
 ```
 
 **Close each visualization window** after viewing
@@ -115,7 +123,8 @@ and the logging system works.
 
 ### Example Visualization
 
-![Word Cloud Example](docs/images/word_cloud_example.png)
+![Most Frequent Bigrams](image-1.png)
+![Most Frequent Tokens](image.png)
 
 ## Verification
 
@@ -127,7 +136,7 @@ uv run python -m pytest
 
 ## Project Documentation
 
-The [hosted documentation site](https://BJean-0905.github.io/nlp-02-text-preprocessing/)
+The [hosted documentation site](https://BJean-0905.github.io/nlp-02-text-preprocessing-custom/)
 is published using Zensical and GitHub Pages.
 
 The documentation site is used to present the project report,
@@ -141,8 +150,8 @@ to check project files and publish the docs.
 
 GitHub Actions include:
 
-- [CI: Python and Documentation Checks](https://github.com/BJean-0905/nlp-02-text-preprocessing/actions/workflows/ci-python-zensical.yml)
-- [CD: Documentation Deployment](https://github.com/BJean-0905/nlp-02-text-preprocessing/actions/workflows/deploy-zensical.yml)
+- [CI: Python and Documentation Checks](https://github.com/BJean-0905/nlp-02-text-preprocessing-custom/actions/workflows/ci-python-zensical.yml)
+- [CD: Documentation Deployment](https://github.com/BJean-0905/nlp-02-text-preprocessing-custom/actions/workflows/deploy-zensical.yml)
 
 ## Developer Reference
 

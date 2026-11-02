@@ -79,3 +79,88 @@
 2026-11-01 17:14:03 | INFO | CI | Pipeline executed successfully!
 2026-11-01 17:14:03 | INFO | CI | ========================
 2026-11-01 17:14:03 | INFO | CI | END main()
+2026-11-01 17:35:13 | INFO | CI | === RUN START ===
+2026-11-01 17:35:13 | INFO | CI | project=NLP
+2026-11-01 17:35:13 | INFO | CI | repo_dir=nlp-02-text-preprocessing-custom
+2026-11-01 17:35:13 | INFO | CI | python=3.14.3
+2026-11-01 17:35:13 | INFO | CI | os=Windows 11
+2026-11-01 17:35:13 | INFO | CI | shell=powershell
+2026-11-01 17:35:13 | INFO | CI | cwd=.
+2026-11-01 17:35:13 | INFO | CI | github_actions=False
+2026-11-01 17:35:13 | INFO | CI | START script.....
+2026-11-01 17:35:13 | INFO | CI | ROOT_PATH = .
+2026-11-01 17:35:13 | INFO | CI | DATA_PATH = data
+2026-11-01 17:35:13 | INFO | CI | NOTEBOOKS_PATH = notebooks
+2026-11-01 17:35:13 | INFO | CI | SCRIPTS_PATH = scripts
+2026-11-01 17:35:33 | INFO | CI | ========================
+2026-11-01 17:35:33 | INFO | CI | Pipeline executed successfully!
+2026-11-01 17:35:33 | INFO | CI | ========================
+2026-11-01 17:35:33 | INFO | CI | END main()
+2026-11-01 17:43:03 | INFO | CI | === RUN START ===
+2026-11-01 17:43:03 | INFO | CI | project=NLP
+2026-11-01 17:43:03 | INFO | CI | repo_dir=nlp-02-text-preprocessing-custom
+2026-11-01 17:43:03 | INFO | CI | python=3.14.3
+2026-11-01 17:43:03 | INFO | CI | os=Windows 11
+2026-11-01 17:43:03 | INFO | CI | shell=powershell
+2026-11-01 17:43:03 | INFO | CI | cwd=.
+2026-11-01 17:43:03 | INFO | CI | github_actions=False
+2026-11-01 17:43:03 | INFO | CI | START script.....
+2026-11-01 17:43:03 | INFO | CI | ROOT_PATH = .
+2026-11-01 17:43:03 | INFO | CI | DATA_PATH = data
+2026-11-01 17:43:03 | INFO | CI | NOTEBOOKS_PATH = notebooks
+2026-11-01 17:43:03 | INFO | CI | SCRIPTS_PATH = scripts
+2026-11-01 17:43:45 | INFO | CI | ========================
+2026-11-01 17:43:45 | INFO | CI | Pipeline executed successfully!
+2026-11-01 17:43:45 | INFO | CI | ========================
+2026-11-01 17:43:45 | INFO | CI | END main()
+2026-11-01 18:01:36 | INFO | CI | === RUN START ===
+2026-11-01 18:01:36 | INFO | CI | project=NLP
+2026-11-01 18:01:36 | INFO | CI | repo_dir=nlp-02-text-preprocessing-custom
+2026-11-01 18:01:36 | INFO | CI | python=3.14.3
+2026-11-01 18:01:36 | INFO | CI | os=Windows 11
+2026-11-01 18:01:36 | INFO | CI | shell=powershell
+2026-11-01 18:01:36 | INFO | CI | cwd=.
+2026-11-01 18:01:36 | INFO | CI | github_actions=False
+2026-11-01 18:01:36 | INFO | CI | START script.....
+2026-11-01 18:01:36 | INFO | CI | ROOT_PATH = .
+2026-11-01 18:01:36 | INFO | CI | DATA_PATH = data
+2026-11-01 18:01:36 | INFO | CI | NOTEBOOKS_PATH = notebooks
+2026-11-01 18:01:36 | INFO | CI | SCRIPTS_PATH = scripts
+2026-11-01 18:01:51 | INFO | CI | ========================
+2026-11-01 18:01:51 | INFO | CI | Pipeline executed successfully!
+2026-11-01 18:01:51 | INFO | CI | ========================
+2026-11-01 18:01:51 | INFO | CI | END main()
+2026-11-01 18:05:28 | INFO | CI | === RUN START ===
+2026-11-01 18:05:28 | INFO | CI | project=NLP
+2026-11-01 18:05:28 | INFO | CI | repo_dir=nlp-02-text-preprocessing-custom
+2026-11-01 18:05:28 | INFO | CI | python=3.14.3
+2026-11-01 18:05:28 | INFO | CI | os=Windows 11
+2026-11-01 18:05:28 | INFO | CI | shell=powershell
+2026-11-01 18:05:28 | INFO | CI | cwd=.
+2026-11-01 18:05:28 | INFO | CI | github_actions=False
+2026-11-01 18:05:28 | INFO | CI | START script.....
+2026-11-01 18:05:28 | INFO | CI | ROOT_PATH = .
+2026-11-01 18:05:28 | INFO | CI | DATA_PATH = data
+2026-11-01 18:05:28 | INFO | CI | NOTEBOOKS_PATH = notebooks
+2026-11-01 18:05:28 | INFO | CI | SCRIPTS_PATH = scripts
+2026-11-01 18:05:49 | INFO | CI | ========================
+2026-11-01 18:05:49 | INFO | CI | Pipeline executed successfully!
+2026-11-01 18:05:49 | INFO | CI | ========================
+2026-11-01 18:05:49 | INFO | CI | END main()
+2026-11-01 18:31:21 | INFO | CI | === RUN START ===
+2026-11-01 18:31:21 | INFO | CI | project=NLP
+2026-11-01 18:31:21 | INFO | CI | repo_dir=nlp-02-text-preprocessing-custom
+2026-11-01 18:31:21 | INFO | CI | python=3.14.3
+2026-11-01 18:31:21 | INFO | CI | os=Windows 11
+2026-11-01 18:31:21 | INFO | CI | shell=powershell
+2026-11-01 18:31:21 | INFO | CI | cwd=.
+2026-11-01 18:31:21 | INFO | CI | github_actions=False
+2026-11-01 18:31:21 | INFO | CI | START script.....
+2026-11-01 18:31:21 | INFO | CI | ROOT_PATH = .
+2026-11-01 18:31:21 | INFO | CI | DATA_PATH = data
+2026-11-01 18:31:21 | INFO | CI | NOTEBOOKS_PATH = notebooks
+2026-11-01 18:31:21 | INFO | CI | SCRIPTS_PATH = scripts
+2026-11-01 18:31:29 | INFO | CI | ========================
+2026-11-01 18:31:29 | INFO | CI | Pipeline executed successfully!
+2026-11-01 18:31:29 | INFO | CI | ========================
+2026-11-01 18:31:29 | INFO | CI | END main()
